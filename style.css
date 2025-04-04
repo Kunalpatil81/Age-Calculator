@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,rgb(203, 114, 117),rgb(130, 103, 96),rgb(244, 147, 216));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.calculator h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-box {
+    margin-top: 20px;
+    position: relative;
+}
+
+.input-box input[type="date"] {
+    width: 89%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(234, 240, 243, 0.9);
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.input-box input[type="date"]:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.02);
+}
+
+.input-box button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    width: 25%;
+}
+
+.input-box button:hover {
+    background: #ff8566;
+}
+
+.input-box button:active {
+    transform: scale(0.98);
+}
+
+#result{
+    font-size: 20px;
+    color:rgb(48, 44, 44)
+}
+
+#result span {
+    font-weight: bold;
+    color:rgb(164, 19, 6);
+}
